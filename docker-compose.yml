@@ -1,0 +1,12 @@
+version: '3'
+services:
+  inginious-wsgi:
+    image: inginious:latest
+    ports:
+      - 0.0.0.0:8080:8080
+    volumes:
+      - ./container_root:/inginious
+      - /var/run/docker.sock:/var/run/docker.sock
+    stdin_open: true
+    tty: true
+    network_mode: host
