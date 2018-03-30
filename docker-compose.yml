@@ -6,7 +6,17 @@ services:
       - 0.0.0.0:8080:8080
     volumes:
       - ./container_root:/inginious
+    stdin_open: true
+    tty: true
+  inginious-backend:
+    image: inginious-backend:latest
+  inginious-agent-docker:
+    image: inginious-agent-docker:latest
+    volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     stdin_open: true
     tty: true
-    network_mode: host
+  inginious-mongodb:
+    image: mongo:3.4
+    volumes:
+      - ./mongo_root:/data/db
