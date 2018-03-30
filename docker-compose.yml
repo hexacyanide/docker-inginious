@@ -1,7 +1,7 @@
 version: '3'
 services:
   inginious-wsgi:
-    image: inginious:latest
+    image: inginious-base:latest
     ports:
       - 0.0.0.0:8080:8080
     volumes:
@@ -22,4 +22,4 @@ services:
   inginious-mongodb:
     image: mongo:3.4
     volumes:
-      - ./container_files//mongo:/data/db
+      - ./container_files/mongo:/data/db

@@ -11,7 +11,7 @@ RUN \
 
 WORKDIR /inginious
 
-ENV INGINIOUS_WEBAPP_CONFIG "/inginious/configuration.yml"
+ENV INGINIOUS_WEBAPP_CONFIG "/inginious/configuration.yaml"
 ENV INGINIOUS_WEBAPP_HOST "0.0.0.0"
 ENV INGINIOUS_WEBAPP_PORT "8080"
 
