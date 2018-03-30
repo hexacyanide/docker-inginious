@@ -1,3 +1,3 @@
-FROM inginious:latest
+FROM inginious-base:latest
 
 ENTRYPOINT ["inginious-backend", "tcp://0.0.0.0:2001", "tcp://0.0.0.0:2000"]
