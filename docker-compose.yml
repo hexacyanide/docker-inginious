@@ -13,6 +13,8 @@ services:
   inginious-agent-docker:
     image: inginious-agent-docker:latest
     volumes:
+      # This will require an NFS mount.
+      - ./container_root:/inginious
       - /var/run/docker.sock:/var/run/docker.sock
     stdin_open: true
     tty: true

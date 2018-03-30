@@ -1,0 +1,9 @@
+version: '3'
+services:
+  inginious-agent-docker:
+    image: inginious-agent-docker:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: 127.0.0.1:2001
+    stdin_open: true
+    tty: true
