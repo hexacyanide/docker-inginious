@@ -10,14 +10,15 @@ services:
     tty: true
   inginious-backend:
     image: inginious-backend:latest
-  inginious-agent-docker:
-    image: inginious-agent-docker:latest
-    volumes:
-      # This will require an NFS mount.
-      - ./container_root:/inginious
-      - /var/run/docker.sock:/var/run/docker.sock
-    stdin_open: true
-    tty: true
+#  inginious-agent-docker:
+#    image: inginious-agent-docker:latest
+#    volumes:
+#      # This will require an NFS mount.
+#      - ./container_root/tasks:/inginious/tasks
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    stdin_open: true
+#    tty: true
+#    privileged: true
   inginious-mongodb:
     image: mongo:3.4
     volumes:
