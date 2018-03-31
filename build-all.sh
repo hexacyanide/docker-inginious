@@ -12,4 +12,7 @@ cd ../inginious-backend
 cd ../inginious-agent-docker
 ./build
 
+cd ../inginious-agent-mcq
+./build
+
 docker images | grep --color=always ^inginious-

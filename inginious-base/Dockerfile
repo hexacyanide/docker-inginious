@@ -18,4 +18,3 @@ ENV INGINIOUS_WEBAPP_PORT "8080"
 ENTRYPOINT ["inginious-webapp"]
 
 EXPOSE 8080/tcp
-
