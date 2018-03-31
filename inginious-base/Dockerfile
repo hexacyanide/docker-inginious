@@ -15,12 +15,6 @@ ENV INGINIOUS_WEBAPP_CONFIG "/inginious/configuration.yaml"
 ENV INGINIOUS_WEBAPP_HOST "0.0.0.0"
 ENV INGINIOUS_WEBAPP_PORT "8080"
 
-#RUN \
-#  pip3 install uwsgi
-
-
-#RUN mkdir tasks/
-
 ENTRYPOINT ["inginious-webapp"]
 
 EXPOSE 8080/tcp
